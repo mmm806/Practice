@@ -1,0 +1,17 @@
+### Test GET Hello API (이제 정상 동작 가능!)
+GET http://127.0.0.1:8080/hello/world
+
+### Create User (POST)
+POST http://127.0.0.1:8080/users  ✅ (8081 → 8080으로 변경)
+Content-Type: application/json
+
+{
+  "userName": "Gyutae",
+  "userAge": 35
+}
+
+### Get Existing User (GET)
+GET http://127.0.0.1:8080/users/Gyutae  ✅ (8081 → 8080으로 변경)
+
+### Get Non-Existing User (GET)
+GET http://127.0.0.1:8080/users/Codeit  ✅ (8081 → 8080으로 변경)
