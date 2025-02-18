@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>상품 등록</title>
+</head>
+<body>
+<h1>상품 등록</h1>
+<form action="/product/form" method="post">
+    <label>상품명:</label>
+    <input type="text" name="name" required><br>
+
+    <label>가격:</label>
+    <input type="number" name="price" step="0.01" required><br>
+
+    <label>설명:</label>
+    <textarea name="description"></textarea><br>
+
+    <button type="submit">등록</button>
+</form>
+</body>
+</html>
